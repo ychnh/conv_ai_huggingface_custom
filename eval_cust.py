@@ -150,8 +150,7 @@ while True:
         history = []
         print('Reloading New Personality')
         print( tokenizer.decode( chain(*p) ) )
-
-
+        continue
 
     history.append(tokenizer.encode(raw_text))                                                      
     with torch.no_grad():                                                                           
